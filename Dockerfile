@@ -15,3 +15,4 @@ WORKDIR /var/www/html
 COPY wp /usr/local/bin/
 ADD https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar /usr/local/bin/wp-cli
 RUN chmod +x /usr/local/bin/wp-cli
+CMD wp
